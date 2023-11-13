@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+__annotations__#!/usr/bin/env python3
 
 import ipdb
 
@@ -10,5 +10,5 @@ def tracing_the_function():
     this_variable_hasnt_been_interpreted_yet = \
         "The program froze before it could read me!"
     print(this_variable_hasnt_been_interpreted_yet)
-
+    ipdb.set_trace()
 tracing_the_function()
